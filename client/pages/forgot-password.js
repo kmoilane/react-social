@@ -40,6 +40,10 @@ const ForgotPassword = () => {
                 setSecret("");
                 setOk(true);
                 setLoading(false);
+                toast.success(
+                    "Password changed successfully. You can now login!"
+                );
+                router.push("./login");
             }
         } catch (err) {
             console.log(err);
